@@ -3,8 +3,7 @@
 const http = require("http");
 const fs = require("fs");
 
-const port = 3000;
-const hostname = "localhost";
+const port = process.env.PORT || 5000;
 
 const home = fs.readFileSync("index.html");
 
@@ -14,17 +13,16 @@ const server = http.createServer((req, res)=>{
         return res.end(home);
     }
     else if(req.url==='/about'){
-        return res.end("<h1>About</h1>");
+        return res.end("<h1>About - Coming soon...</h1>");
     }
     else if(req.url==='/contact'){
-        return res.end("<h1>Contact</h1>");
+        return res.end("<h1>Contact - Coming soon...</h1>");
     }
     else{
         return res.end("<h1 style='color: red;'>404 Page Not Found</h1>");
     }
-    res.end("Working...");
 });
 
 server.listen(port, hostname, ()=>{
-    console.log(`Server is running on http://${hostname}:${port}`);
+    console.log(`Server is running...`);
 });
