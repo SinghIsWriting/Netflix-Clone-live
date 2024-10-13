@@ -2,10 +2,5 @@
   "version": 2,
   "name": "netflix-clone",
   "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-  "routes": [
-    {
-      "src": "/media/(.*)",
-      "dest": "/public/media/$1"
-    }
-  ]
+  "routes": [{ "src": "/(.*)", "dest": "/index.js" }]
 }

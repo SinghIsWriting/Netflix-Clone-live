@@ -10,7 +10,7 @@ body{
 .main{
     height: 95vh;
     max-width: 100vw;
-    background-image: url("./public/media/bg.jpg");
+    background-image: url("./assets/images/bg.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);

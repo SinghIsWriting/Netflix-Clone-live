@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
-        <!-- <link rel="styl/esheet" href="style.css"> -->
+        <!-- <link rel="stylesheet" href="style.css"> -->
          <style>
             *{
     margin: 0;
@@ -18,7 +18,7 @@ body{
 .main{
     height: 95vh;
     max-width: 100vw;
-    background-image: url("./public/media/bg.jpg");
+    /* background-image: url("assets/images/bg.jpg"); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
@@ -257,15 +257,6 @@ nav .signin>:nth-child(2):hover{
     font-family: sans-serif;
     gap: 40px;
 }
-
-.firstpart .tv video{
-        width: 125px;
-        height: 70px;
-}
-.secondpart .tv video{
-        width: 125px;
-        height: 70px;
-}
 @media screen and (max-width: 1140px) {
     .firstpart{
         display: flex;
@@ -319,12 +310,12 @@ nav .signin>:nth-child(2):hover{
     font-size: 16px;
 }
 .firstpart .tv{
-    border: 2px solid rgb(123, 123, 123);
+    /* border: 2px solid rgb(123, 123, 123); */
     border-radius: 4px;
     scale: 2.85;
 }
 .secondpart .tv{
-    border: 2px solid rgb(123, 123, 123);
+    /* border: 2px solid rgb(123, 123, 123); */
     border-radius: 4px;
     scale: 2.85;
 }
@@ -610,7 +601,7 @@ footer .foot-lang{
                     </div>
                     <div class="signin">
                         <div class="lang"><img width="14px" style="background-color: white;"
-                                src="./public/media/lang.png" alt="">
+                                src="assets/images/lang.png" alt="">
                             <div>English</div>
                         </div>
                         <span>Sign In</span>
@@ -645,8 +636,8 @@ footer .foot-lang{
                 <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
             </div>
             <div class="tv">
-                <video src="./public/media/video1.m4v" loop muted autoplay></video>
-                <!-- <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                <!-- <video src="assets/videos/video1.m4v" loop muted autoplay></video> -->
+                <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
                     <g id="television-core-small">
                         <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
                             d="M37.2 53.3992C37.2 52.7365 36.6628 52.1992 36 52.1992H34.8C34.1373 52.1992 33.6 52.7365 33.6 53.3992V56.2636C33.6 56.9129 33.0834 57.4433 32.4347 57.4739C30.3013 57.5744 28.1719 57.7834 26.0546 58.1011L19.444 59.0926C18.2692 59.2688 17.4 60.2782 17.4 61.4662V62.0992C17.4 62.4304 17.6686 62.6992 18 62.6992H52.8C53.1314 62.6992 53.4 62.4304 53.4 62.0992V61.4662C53.4 60.2782 52.5309 59.2688 51.3561 59.0926L44.7454 58.1011C42.6282 57.7834 40.4987 57.5744 38.3653 57.4739C37.7167 57.4433 37.2 56.9129 37.2 56.2636V53.3992Z"
@@ -711,13 +702,13 @@ footer .foot-lang{
                             <stop offset="1" stop-color="#E4A1FA"></stop>
                         </radialGradient>
                     </defs>
-                </svg> -->
+                </svg>
             </div>
         </section>
         <section class="firstpart secondpart">
             <div class="tv">
-                <video src="./public/media/video1.mp4" loop muted autoplay></video>
-                <!-- <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
+                <!-- <video src="assets/videos/video1.mp4" loop muted autoplay></video> -->
+                <svg width="72" height="72" viewBox="0 0 72 72" fill="none">
                     <g id="download-core-small">
                         <path id="Vector"
                             d="M36 70.2008C54.8882 70.2008 70.2001 54.8889 70.2001 36.0008C70.2001 17.1126 54.8882 1.80078 36 1.80078C17.1119 1.80078 1.80005 17.1126 1.80005 36.0008C1.80005 54.8889 17.1119 70.2008 36 70.2008Z"
@@ -786,7 +777,7 @@ footer .foot-lang{
                             <stop offset="1" stop-color="white" stop-opacity="0"></stop>
                         </radialGradient>
                     </defs>
-                </svg> -->
+                </svg>
             </div>
             <div class="txt">
                 <p>Download your shows to watch offline</p>
@@ -1258,7 +1249,7 @@ footer .foot-lang{
             </div>
 
             <div class="foot-lang">
-                <img width="14px" style="background-color: white;" src="./public/media/lang.png" alt="">
+                <img width="14px" style="background-color: white;" src="assets/images/lang.png" alt="">
                 <div>English</div>
             </div>
 
